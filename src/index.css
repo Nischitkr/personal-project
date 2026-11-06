@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Range input customization */
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 9999px;
+    background: #10b981;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+    border: 2px solid #064e3b;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 14px rgba(16, 185, 129, 0.8);
+  }
+  input[type="range"]::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 9999px;
+    background: #10b981;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+    border: 2px solid #064e3b;
+  }
+}
+
+/* Print styles for Bank Loan / Contractor Verification PDF */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-container {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    margin: 0 !important;
+    padding: 1.5rem !important;
+    max-width: 100% !important;
+    color: #0f172a !important;
+  }
+}

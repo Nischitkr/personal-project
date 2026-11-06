@@ -1,0 +1,6 @@
+{
+  "name": "Civil Material Calculator",
+  "description": "High-precision Indian civil engineering estimator for brickwork, 1:6 mortar mix, 50kg cement bags, and sand CFT with instant commercial billing and wholesale contractor quotes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
